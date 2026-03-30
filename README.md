@@ -70,7 +70,11 @@ C:.
   - C++ ⚡
   - C# 🔷
   - Others as needed
-
+- **Submission is mandatory:**
+  - Use Ctrl + Alt + Enter (Windows/Linux) or Cmd + Alt + Enter (macOS) for quick submit.
+  - Or Ctrl + Shift + P → LeetCode: Submit.
+- ✅ Only after a solution is Accepted does VS Code create the problems/<slug>/solution.<ext> folder.
+- This folder is the input for the automation script. Without submission, the automation step has no effect.
 ---
 
 ### 🔄 2. Local Storage
@@ -89,6 +93,9 @@ Using:
 
 - `move-leetcode.ps1` (PowerShell script)
 - VS Code Task (`tasks.json`)
+- Once the problems/ folder exists (after submit), run:
+  Ctrl + Shift + P → Run Task → Move LeetCode Solutions
+
 
 #### 🔹 What it does:
 
@@ -103,6 +110,7 @@ Using:
 ```
 Ctrl + Shift + P → Run Task → Move LeetCode Solutions
 ```
+- This moves all accepted solutions into a timestamped folder and cleans up the working directory.
 
 ---
 
